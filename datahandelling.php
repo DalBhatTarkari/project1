@@ -6,7 +6,7 @@
 	 $sex =$_POST['gender'];
 	 $mail =$_POST['email'];
 	 $pw =$_POST['pwd'];
-	 $date =$_POST['date'];
+	 $date = date('Y-m-d');
 	 $toc =$_POST['toc'] ?? 'Not Agreed';
 	 if(strlen($pw)<8){
 	 $disp_pw = str_repeat('*', strlen($pw)); }
@@ -33,4 +33,5 @@
 	 echo("Joined Date: " . $date . "<br>");
 	 echo("TOC Status: " . $toc . "<br>");}}
  }
+
 ?>
