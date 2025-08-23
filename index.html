@@ -42,19 +42,20 @@
     <h1>Registration Form</h1>
     <form method="POST" action="datahandelling.php" >
       <table style="margin:auto;">
-        <tr><th>Name:</th><td><input type="text" name="name" placeholder="Abhinav"></td></tr>
-        <tr><th>Age:</th><td><input type="number" name="age" placeholder="17"></td></tr>
+        <tr><th>Name:</th><td><input type="text" name="name" placeholder="Abhinav" value="Abhinav Upadhyaya"></td></tr>
+        <tr><th>Age:</th><td><input type="number" name="age" placeholder="17" value="17"></td></tr>
         <tr>
           <th>Gender:</th>
           <td>
-            Male: <input type="radio" name="gender" value="Male">
+            Male: <input type="radio" name="gender" value="Male" checked>
             Female: <input type="radio" name="gender" value="Female">
             Other: <input type="radio" name="gender" value="Other">
           </td>
         </tr>
-        <tr><th>Email ID:</th><td><input type="email" name="email" placeholder="xyz@gmail.com"></td></tr>
-        <tr><th>Password:</th><td><input type="password" name="pwd" placeholder="12345678"></td></tr>
-        <tr><th>Join Date:</th><td><input type="date" name="date" required></td></tr>
+        <tr><th>Email ID:</th><td><input type="email" name="email" placeholder="xyz@gmail.com" value="upadhyayaabhinav10@gmail.cpm"></td></tr>
+        <tr><th>Password:</th><td><input type="password" name="pwd" placeholder="12345678" value="12345678"></td></tr>
+		<tr><th>Re-Password:</th><td><input type="password" name="repwd" placeholder="12345678" value="12345678"></td></tr>
+        <tr><th>Join Date:</th><td><input type="date" name="date" required value="2025-08-30"></td></tr>
       </table>
       <p>Do you agree to our <b>TERMS AND CONDITIONS</b>? 
 	  <input type="checkbox" name="toc" value="Agreed"></p>
@@ -63,5 +64,3 @@
   </div>
 </body>
 </html>
-
-
