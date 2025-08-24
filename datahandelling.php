@@ -4,13 +4,13 @@
 	 $name =$_POST['name'];
 	 $age =$_POST['age'];
 	 $sex =$_POST['gender'];
+	 $country=$_POST['country'];
 	 $mail =$_POST['email'];
 	 $pw =$_POST['pwd'];
-	 $rpw =$_POST['repwd'];
+	 $nt =$_POST['note'];
 	 $date = date('Y-m-d');
 	 $toc =$_POST['toc'] ?? 'Not Agreed';
 	 $hash_pw=password_hash($pw, PASSWORD_DEFAULT);
-	 $hash_rpw=password_hash($rpw, PASSWORD_DEFAULT);
 
 	 
 	 if(strlen($pw)<8){
@@ -32,14 +32,15 @@
 	 echo("User Name: " . $name . "<br>");
 	 echo("User Age: " . $age . "<br>");
 	 echo("User Gender: " . $sex . "<br>");
+	 echo("User Country: " . $country . "<br>");
 	 echo("User Email: " . $mail . "<br>");
 	 echo("User Password: " . $disp_pw . "<br>");
 	 echo("User Password(hashed): " . $hash_pw . "<br>");
-	 if (password_verify($rpw, $hash_rpw)) {
+	 if (password_verify($pw, $hash_pw)) {
 		 echo "Login successful!<br>";}
 		else {
-		 echo "Invalid password.<br>";
-}
+		 echo "Invalid password.<br>";}
+	 echo("User Note: " . $nt . "<br>");
 	 echo("Joined Date: " . $date . "<br>");
 	 echo("TOC Status: " . $toc . "<br>");}}
  }
