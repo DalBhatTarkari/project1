@@ -52,9 +52,16 @@
 					Other: <input type="radio" name="gender" value="Other">
 				</td>
 				</tr>
+				<tr><th>Country:</th><td>
+							<select name="country">
+								<option value="Nepal">Nepal</option>
+								<option value="China">China</option>
+								<option value="USA">USA</option>
+							</select>
+						</td></tr>
 				<tr><th>Email ID:</th><td><input type="email" name="email" placeholder="xyz@gmail.com" value="upadhyayaabhinav10@gmail.cpm"></td></tr>
 				<tr><th>Password:</th><td><input type="password" name="pwd" placeholder="12345678" value="12345678"></td></tr>
-				<tr><th>Re-Password:</th><td><input type="password" name="repwd" placeholder="12345678" value="12345678"></td></tr>
+				<tr><th>User Notes:</th><td><textarea name="note" placeholder="The quick brown fox jumped over the lazy dog" maxlength="20"></textarea></td></tr>
 				<tr><th>Join Date:</th><td><input type="date" name="date" required value="2025-08-30"></td></tr>
 			 </table>
 			 <p>Do you agree to our <b>TERMS AND CONDITIONS</b>? 
